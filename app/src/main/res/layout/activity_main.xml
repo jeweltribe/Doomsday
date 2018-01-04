@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/root"
+    android:background="@color/nicoiSalad"
     tools:context="com.example.varun.tictactoe.MainActivity">
 
 
@@ -150,4 +151,50 @@
             android:tag="8"/>
 
     </GridLayout>
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Player X"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Player O"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/player1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/board"
+        android:layout_alignStart="@+id/board"
+        android:layout_below="@+id/player1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/board"
+        android:layout_alignRight="@+id/board"
+        android:layout_below="@+id/player2"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 </RelativeLayout>
